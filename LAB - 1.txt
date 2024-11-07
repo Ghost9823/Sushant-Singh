@@ -1,0 +1,43 @@
+Write a program to input two numbers and find the maximum between two numbers using the conditional/ternary operator.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+package demo;
+public class Greatest {
+
+	public static void main(String[] args) {
+		
+		    int one = 150;
+		    int two = 500;
+		    int three = 200;
+		    
+		    int x = (one > two) ? one : two;
+		    int y = (x > three) ? x : three;
+		    System.out.println("greatest : " + y);
+		}
+
+
+	}
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Write a program to perform a bitwise AND operation on a number after shifting its bits to the right by 2 positions.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+package demo;
+
+public class Bitwise {
+
+	public static void main(String[] args) {
+		int num = 100;
+		int result = (num>>2) & 20;                        // bitwise and
+		                                                   // converts to binary then removes towards its indicating then do operation AND
+		                                                     
+		System.out.println("result : "+ result);          
+
+	}
+
+}
+---------------------------------------------------------------------------------------------------------------------------------------------------------
