@@ -1,0 +1,89 @@
+Greatest Between 2 Numbers:
+----------------------------------------------------------------
+package demo;
+
+public class IFelse2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int one = 500;
+		int two = 200;
+		
+		if(one > two)
+		System.out.println("Greater : "+one);
+		else
+		System.out.println("Greater : "+two);
+
+	}
+
+}
+----------------------------------------------------------------
+
+
+Greatest Between 3 Numbers:
+----------------------------------------------------------------
+package demo;
+
+public class IFelse4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int first = 300;
+        int second = 123;
+        int third = 400;
+        int max; // Declare
+
+        // Check which value is the greatest
+        if (first < second) {
+            if (third < second) {
+                max = second;
+                System.out.println("Greater is: " + max);
+            }
+        } else if (first < third) {
+            if (second < third) {
+                max = third;
+                System.out.println("Greater is: " + max);
+            }
+        } else { // No condition here
+            if (third < first) {
+                max = first;
+                System.out.println("Greater is: " + max);
+            }
+        }
+    }
+}
+
+	}
+
+}
+----------------------------------------------------------------
+
+
+Greatest Between 4 Numbers:
+----------------------------------------------------------------
+package demo;
+
+public class IFdemo {
+
+    public static void main(String[] args) {
+        int one = 500;
+        int two = 200;
+        int three = 300;
+        int four = 8192;
+
+        int greatest = one;
+
+        if (two > greatest) {
+            greatest = two;
+        }
+        if (three > greatest) {
+            greatest = three;
+        }
+        if (four > greatest) {
+            greatest = four;
+        }
+
+        System.out.println("Greater: " + greatest);
+    }
+}
+----------------------------------------------------------------
