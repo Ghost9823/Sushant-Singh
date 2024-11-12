@@ -1,0 +1,60 @@
+find out factorial of a given no. 
+-------------------------------------------------------------------------------------
+package demo;
+
+public class Factorial {
+
+    public static void main(String[] args) {
+        java.util.Scanner scanner = new java.util.Scanner(System.in);
+        System.out.print("Enter a number to find its factorial: ");
+        int number = scanner.nextInt();
+        int factorial = 1;
+
+        for (int i = 1; i <= number; i++) {
+            factorial *= i;
+        }
+
+        System.out.println("The factorial of " + number + " is: " + factorial);
+        
+        scanner.close();
+    }
+}
+-------------------------------------------------------------------------------------
+
+
+find out whether the entered no. is strong or not
+-------------------------------------------------------------------------------------
+package demo;
+
+public class StrongNumberChecker {
+public static void main(String[] args) {
+        java.util.Scanner scanner = new java.util.Scanner(System.in);
+        System.out.print("Enter a number to check if it's a Strong Number: ");
+        int number = scanner.nextInt();
+        int x = number;
+        int y = 0;
+
+        while (number > 0) {
+            int digit = number % 10;
+            y += factorial(digit);
+            number /= 10;
+        }
+
+        if (y == x) {
+            System.out.println(x + " is a Strong Number.");
+        } else {
+            System.out.println(x + " is not a Strong Number.");
+        }
+
+        scanner.close();
+    }
+
+    public static int factorial(int n) {
+        int fact = 1;
+        for (int i = 1; i <= n; i++) {
+            fact *= i;
+        }
+        return fact;
+    }
+}
+-------------------------------------------------------------------------------------
